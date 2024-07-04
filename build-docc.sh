@@ -8,6 +8,6 @@ xcrun xcodebuild docbuild \
 xcrun docc process-archive transform-for-static-hosting \
     "$PWD/.derivedData/Build/Products/Debug-iphonesimulator/doctest.doccarchive" \
     --output-path ".docs" \
-    --hosting-base-path "" # add your repo name later
+    --hosting-base-path "doctest" # add your repo name later
 
 echo '<script>window.location.href += "/documentation/doctest"</script>' > .docs/index.html
